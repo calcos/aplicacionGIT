@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="untitled1.jsf" id="d1">
+        <af:messages id="m1"/>
+        <af:form id="f1">
+            <af:table value="#{bindings.SgrIdentificacionView1.collectionModel}" var="row"
+                      rows="#{bindings.SgrIdentificacionView1.rangeSize}"
+                      emptyText="#{bindings.SgrIdentificacionView1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                      rowBandingInterval="0"
+                      selectedRowKeys="#{bindings.SgrIdentificacionView1.collectionModel.selectedRow}"
+                      selectionListener="#{bindings.SgrIdentificacionView1.collectionModel.makeCurrent}"
+                      rowSelection="single" fetchSize="#{bindings.SgrIdentificacionView1.rangeSize}" id="t1">
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeUsudaz.label}" id="c1">
+                    <af:outputText value="#{row.IdeUsudaz}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeUsudaz.tooltip}" id="ot1"/>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeUsupassword.label}" id="c2">
+                    <af:outputText value="#{row.IdeUsupassword}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeUsupassword.tooltip}"
+                                   id="ot2"/>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeUsured.label}" id="c3">
+                    <af:outputText value="#{row.IdeUsured}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeUsured.tooltip}" id="ot3"/>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeFecha.label}" id="c4">
+                    <af:outputText value="#{row.IdeFecha}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeFecha.tooltip}" id="ot4">
+                        <af:convertDateTime pattern="#{bindings.SgrIdentificacionView1.hints.IdeFecha.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeControl.label}" id="c5">
+                    <af:outputText value="#{row.IdeControl}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeControl.tooltip}" id="ot5"/>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeBloqueo.label}" id="c6">
+                    <af:outputText value="#{row.IdeBloqueo}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeBloqueo.tooltip}" id="ot6">
+                        <af:convertNumber groupingUsed="false"
+                                          pattern="#{bindings.SgrIdentificacionView1.hints.IdeBloqueo.format}"/>
+                    </af:outputText>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeUsuredlogon.label}" id="c7">
+                    <af:outputText value="#{row.IdeUsuredlogon}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeUsuredlogon.tooltip}"
+                                   id="ot7"/>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeMaquinalogon.label}" id="c8">
+                    <af:outputText value="#{row.IdeMaquinalogon}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeMaquinalogon.tooltip}"
+                                   id="ot8"/>
+                </af:column>
+                <af:column headerText="#{bindings.SgrIdentificacionView1.hints.IdeFechalogon.label}" id="c9">
+                    <af:outputText value="#{row.IdeFechalogon}"
+                                   shortDesc="#{bindings.SgrIdentificacionView1.hints.IdeFechalogon.tooltip}" id="ot9">
+                        <af:convertDateTime pattern="#{bindings.SgrIdentificacionView1.hints.IdeFechalogon.format}"/>
+                    </af:outputText>
+                </af:column>
+            </af:table>
+        </af:form>
+    </af:document>
+</f:view>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="SgrIdentificacion"
+  Version="12.2.1.22.48"
+  InheritPersonalization="merge"
+  DBObjectType="table"
+  DBObjectName="SGR_IDENTIFICACION"
+  AliasName="SgrIdentificacion"
+  BindingStyle="OracleName">
+  <Attribute
+    Name="IdeUsudaz"
+    IsNotNull="true"
+    Precision="100"
+    ColumnName="IDE_USUDAZ"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IdeUsupassword"
+    Precision="100"
+    ColumnName="IDE_USUPASSWORD"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="100"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IdeUsured"
+    Precision="50"
+    ColumnName="IDE_USURED"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IdeFecha"
+    ColumnName="IDE_FECHA"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="SGR_IDENTIFICACION"/>
+  <Attribute
+    Name="IdeControl"
+    Precision="500"
+    ColumnName="IDE_CONTROL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="500"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IdeBloqueo"
+    Precision="4"
+    Scale="0"
+    ColumnName="IDE_BLOQUEO"
+    SQLType="NUMERIC"
+    Type="java.lang.Integer"
+    ColumnType="NUMBER"
+    TableName="SGR_IDENTIFICACION"/>
+  <Attribute
+    Name="IdeUsuredlogon"
+    Precision="50"
+    ColumnName="IDE_USUREDLOGON"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IdeMaquinalogon"
+    Precision="50"
+    ColumnName="IDE_MAQUINALOGON"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="IdeFechalogon"
+    ColumnName="IDE_FECHALOGON"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="SGR_IDENTIFICACION"/>
+  <Attribute
+    Name="IdeFechabloqueo"
+    ColumnName="IDE_FECHABLOQUEO"
+    SQLType="DATE"
+    Type="java.sql.Timestamp"
+    ColumnType="DATE"
+    TableName="SGR_IDENTIFICACION"/>
+  <Attribute
+    Name="IdeObligacambiopass"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="IDE_OBLIGACAMBIOPASS"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="SGR_IDENTIFICACION">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Key
+    Name="CstIdeUsudaz"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="CST_IDE_USUDAZ"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.SgrIdentificacion.IdeUsudaz"/>
+    </AttrArray>
+  </Key>
+</Entity>
